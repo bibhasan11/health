@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Simple Progressive Web App (PWA) written in JavaScript">
+
+    <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon-32x32.png/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon-32x32.png/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>News</title>
+    <!-- ==============================================
+		CSS
+		=============================================== -->
+    <!-- Style-->
+    <link type="text/css" href="libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-toggleable-sm bg-faded justify-content-between" id="mainNav-2">
+            <button name="navbar menu" aria-label="Menu" aria-labelledby="mainNav-2" class="navbar-toggler navbar-toggler-right"  data-toggle="collapse" data-target="#collapsingNavbar2">
+                <span aria-label="toggler" class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" tabindex="0" class="navbar-brand mr-0"> News</a>
+            <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
+                <ul class="navbar-nav  mx-auto">
+                    <!-- Search in right of nav -->
+                    <li class="nav-item ">
+                        <form id="form" class="top_search clearfix">
+                            <div class="top_search_con">
+                                <input class="s" id="q" autocomplete="off" placeholder="Search Here ..." type="text">
+                                <span aria-hidden=”true” class="top_search_icon"><i class="glyphicon glyphicon-search"></i></span>
+                                <input class="top_search_submit" id="search" type="submit">
+                            </div>
+                        </form>
+                    </li>
+                    <!-- Search Ends -->
+                </ul>
+                <div class="styled-select blue semi-square">
+                    <select id="sourceSelector">
+                    </select>
+                </div>
+            </div>
+            <!-- /navbar-collapse -->
+        </nav>
+        <!-- /nav -->
+    </header>
+    <main class="posts-2">
+        <div class="container">
+            <div class="row" id="main">
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </main>
+    <!-- /.section -->
+    <!-- ==============================================
+     Footer Section
+     =============================================== -->
+    <footer class="bottom-footer">
+        <div class="container">
+            <p><span tabindex="0">©2018 news</span></p>
+            <ul id="menu-footer-menu">
+                <li tabindex="0">
+                    <a href="https://newsapi.org">newsapi.org</a>
+                </li>
+                <!-- /li -->
+                <li tabindex="0">
+                    <a href="#">Privacy</a>
+                </li>
+                <!-- /li -->
+                <li tabindex="0">
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <!-- /li -->
+            </ul>
+            <!-- /ul -->
+        </div>
+        <!-- /container -->
+    </footer>
+    <!-- /footer -->
+    <a id="scrollup" tabindex="0">Scroll</a>
+    <!-- ==============================================
+	 Scripts
+	 =============================================== -->
+    <script src="libs/jquery/dist/jquery.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
